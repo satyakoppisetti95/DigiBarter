@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigiBarter.Views.AddItemPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" Padding="20">
+            <Image x:Name="ItemPicHolder" Source="img.png" WidthRequest="100" Margin="20,20,20,20" HorizontalOptions="Center"/>
+
+
+            <Button x:Name="galleryPickBtn" Grid.Column="1" 
+                        BackgroundColor="#009688" 
+                        Text="Select Photo"
+                        Clicked="galleryPickBtn_Clicked"
+                    Margin="50,10,50,20"/>
+
+
+            <Label Text="Title"/>
+            <Entry Keyboard="Default"
+                    x:Name="titleInput"
+               Placeholder="Enter Title"
+               VerticalOptions="CenterAndExpand" />
+
+            <Label Text="Description"/>
+            <Entry Keyboard="Default"
+                    x:Name="descInput"
+               Placeholder="Enter Description"
+               VerticalOptions="CenterAndExpand" />
+
+            <Label Text="Type"/>
+            <Picker x:Name="picker"
+            Title="Select Type">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>FREE</x:String>
+                        <x:String>TRADE</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            
+            <Button
+                x:Name="SaveBtn"
+                Text="Add Item"
+                Margin="0,30,0,0"
+                Clicked="SaveBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

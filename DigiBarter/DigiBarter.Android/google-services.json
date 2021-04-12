@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1027929559011",
+    "project_id": "digibarter-e1298",
+    "storage_bucket": "digibarter-e1298.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027929559011:android:bd31a95e7e80ee0e7cdad6",
+        "android_client_info": {
+          "package_name": "com.companyname.digibarter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027929559011-cess5k3j4qmfrp9ju6kgsdjsc6c6bq2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.companyname.digibarter",
+            "certificate_hash": "ce3588ed8f97d8a817a47ed2fa290ef053f838c5"
+          }
+        },
+        {
+          "client_id": "1027929559011-r7530cjnburoegnotbb0q3jpi8pgk51h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqTjXU8TjSwdktysdl1eMTt9_OABqsWcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027929559011-r7530cjnburoegnotbb0q3jpi8pgk51h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

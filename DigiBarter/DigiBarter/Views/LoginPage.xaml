@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigiBarter.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="Start">
+            <Label Text="Login" FontSize="36" Margin="0,20,0,20"></Label>
+            <Entry Keyboard="Email"
+                    x:Name="emailInput"
+               Placeholder="Enter email address"
+               VerticalOptions="CenterAndExpand" />
+            <Entry Keyboard="Text"
+                    x:Name="PasswordInput"
+               Placeholder="Enter Password"
+                   IsPassword="True"
+               VerticalOptions="CenterAndExpand" />
+            <Button x:Name="LoginBtn"
+                     Margin="0,36,0,0"
+                Text="Login"
+                    Clicked="LoginBtn_Clicked"/>
+            <Label Text="Not registered ? " HorizontalOptions="CenterAndExpand"  Margin="0,20,0,0"></Label>
+            <Button x:Name="RegisterBtn" Text="Register" HorizontalOptions="CenterAndExpand"  Margin="0,20,0,0"
+                    Clicked="RegisterBtn_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

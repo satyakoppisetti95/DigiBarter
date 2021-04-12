@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigiBarter.Views.Register">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" Padding="20">
+            <Label Text="Register" FontSize="36" Margin="0,20,0,20"></Label>
+            <Entry Keyboard="Email"
+               x:Name="emailInput"
+               Placeholder="Enter email address"
+               VerticalOptions="CenterAndExpand" />
+            <Entry Keyboard="Text"
+                   x:Name="PasswordInput"
+               Placeholder="Enter Password"
+                   IsPassword="True"
+               VerticalOptions="CenterAndExpand" />
+            <Entry Keyboard="Text"
+                    x:Name="ConfirmPasswordInput"
+               Placeholder="Confirm Password"
+                   IsPassword="True"
+               VerticalOptions="CenterAndExpand" />
+            <Button x:Name="RegisterBtn"
+                    Margin="0,36,0,0"
+                Text="Register" Clicked="RegisterBtn_Clicked"/>
+
+            <Label Text="Already registered ? " HorizontalOptions="CenterAndExpand"  Margin="0,20,0,0"></Label>
+            <Button Text="Login" HorizontalOptions="CenterAndExpand"  Margin="0,20,0,0"
+                    Clicked="LoginBtn_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

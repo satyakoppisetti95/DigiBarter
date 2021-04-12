@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigiBarter.Views.ExplorePage">
+    <ContentPage.Content>
+        <ListView x:Name="ItemsList" ItemsSource="{Binding Source={x:Reference ExplorePage}, Path=BindingContext.items}" IsVisible="True">
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                       
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding photo_url}" HeightRequest="50" WidthRequest="50"></Image>
+                            <Label Text="{Binding title}"></Label>
+                            <Label Text="{Binding description}"></Label>
+                            <Label Text="{Binding type}"></Label>
+                        </StackLayout>
+                    </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

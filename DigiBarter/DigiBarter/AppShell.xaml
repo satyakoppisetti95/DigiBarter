@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:DigiBarter.Views"
+       Title="DigiBarter"
+       x:Class="DigiBarter.AppShell">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <ShellItem Route="login" Title="DigiBarter" Shell.FlyoutBehavior="Disabled">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
+    </ShellItem>
+
+    <ShellItem Route="register" Shell.FlyoutBehavior="Disabled">
+        <ShellContent ContentTemplate="{DataTemplate local:Register}"></ShellContent>
+    </ShellItem>
+
+
+    <TabBar Route="main">
+        <ShellContent Title="Explore" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Requests" Icon="icon_about.png" Route="RequestsPage" ContentTemplate="{DataTemplate local:RequestsPage}" />
+        <ShellContent Title="Profile" Icon="icon_feed.png" Route="ProfilePage" ContentTemplate="{DataTemplate local:ProfilePage}" />
+    </TabBar>
+
+
+</Shell>

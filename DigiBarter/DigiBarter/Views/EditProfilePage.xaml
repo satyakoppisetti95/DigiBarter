@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigiBarter.Views.EditProfilePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" Padding="20">
+
+            <Image x:Name="profilePicHolder" Source="user.png" WidthRequest="100" Margin="20,20,20,20" HorizontalOptions="Center"/>
+            
+
+            <Button x:Name="galleryPickBtn" Grid.Column="1" 
+                        BackgroundColor="#009688" 
+                        Text="Select Photo"
+                        Clicked="galleryPickBtn_Clicked"
+                    Margin="50,10,50,20"/>
+            
+
+            <Label Text="First Name"/>
+            <Entry Keyboard="Default"
+                    x:Name="firstNameInput"
+               Placeholder="Enter First Name"
+               VerticalOptions="CenterAndExpand" />
+
+            <Label Text="Last Name"/>
+            <Entry Keyboard="Default"
+                    x:Name="lasttNameInput"
+               Placeholder="Enter Last Name"
+               VerticalOptions="CenterAndExpand" />
+            
+            <Label Text="Contact"/>
+            <Entry Keyboard="Numeric"
+                    x:Name="phoneInput"
+               Placeholder="Enter Contact Number"
+               VerticalOptions="CenterAndExpand" />
+
+            <Label Text="Address"/>
+            <Entry Keyboard="Default"
+                    x:Name="addressInput"
+               Placeholder="Enter Address"
+               VerticalOptions="CenterAndExpand" />
+
+            <Button
+                x:Name="SaveBtn"
+                Text="Save"
+                Margin="0,30,0,0"
+                Clicked="SaveBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

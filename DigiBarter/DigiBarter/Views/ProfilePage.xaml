@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigiBarter.Views.ProfilePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start">
+            <Label Text=""
+                   HorizontalOptions="CenterAndExpand" 
+                   FontSize="32"
+                   Margin="0,30,0,0"
+                   x:Name="WelcomeLabel"
+                   ></Label>
+            <Frame CornerRadius="100" 
+               HeightRequest="200"
+               WidthRequest="200"
+               HorizontalOptions="Center"
+               Padding="0"
+               IsClippedToBounds="True">
+                <Image Source="user.png" HorizontalOptions="Center"
+                       x:Name="profilePicHolder"
+                       WidthRequest="200"
+                        VerticalOptions="Center"/>
+            </Frame>
+
+            <Button x:Name="EditProfileBtn" BackgroundColor="#00bcd4" Text="Edit Profile" Margin="10,20,10,0" Clicked="EditProfileBtn_Clicked"/>
+
+            <Button Text="Logout" BackgroundColor="#009688" Margin="10,20,10,10" Clicked="Button_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

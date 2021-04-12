@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigiBarter.Views.RequestsPage">
+  <ListView x:Name="MyListView"
+            ItemsSource="{Binding Items}"
+            ItemTapped="Handle_ItemTapped"
+            CachingStrategy="RecycleElement">
+    
+    
+   
+    <ListView.ItemTemplate>
+      <DataTemplate >
+        <ViewCell Height="300">
+          <StackLayout Orientation="Horizontal"  >
+            <Image x:Name="profilePicHolder" Source="{Binding user_photo_url}" WidthRequest="50" Margin="10"/>
+            <Label Text="{Binding notification_text}" FontSize="Medium"/>
+                       
+            
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+   
+  </ListView>
+</ContentPage>

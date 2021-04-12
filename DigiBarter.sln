@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiBarter.Android", "DigiBarter\DigiBarter.Android\DigiBarter.Android.csproj", "{0693B572-7A54-4910-8C2B-8B98214C1BF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiBarter", "DigiBarter\DigiBarter\DigiBarter.csproj", "{A03D9468-26E5-4C27-81A9-160B6E4C35D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0693B572-7A54-4910-8C2B-8B98214C1BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0693B572-7A54-4910-8C2B-8B98214C1BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0693B572-7A54-4910-8C2B-8B98214C1BF8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0693B572-7A54-4910-8C2B-8B98214C1BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0693B572-7A54-4910-8C2B-8B98214C1BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0693B572-7A54-4910-8C2B-8B98214C1BF8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A03D9468-26E5-4C27-81A9-160B6E4C35D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03D9468-26E5-4C27-81A9-160B6E4C35D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03D9468-26E5-4C27-81A9-160B6E4C35D7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A03D9468-26E5-4C27-81A9-160B6E4C35D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03D9468-26E5-4C27-81A9-160B6E4C35D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03D9468-26E5-4C27-81A9-160B6E4C35D7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C7051CD-8544-4112-B81F-B019334E45DA}
+	EndGlobalSection
+EndGlobal
